@@ -8,5 +8,6 @@ action "Draft an RC" {
   secrets = ["GITHUB_TOKEN"]
   env = {
     TARGET_BRANCH = "master"
+    SOURCE_BRANCH = "develop"
   }
 }
