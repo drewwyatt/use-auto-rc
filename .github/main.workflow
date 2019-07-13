@@ -1,10 +1,10 @@
 workflow "Schedule Workflow" {
   on = "schedule(*/5 * * * *)"
-  resolves = ["drewwyatt/draft-an-rc@0.1.1"]
+  resolves = ["draft an rc"]
 }
 
-action "drewwyatt/draft-an-rc@0.1.1" {
-  uses = "drewwyatt/draft-an-rc@0.1.1"
+action "draft an rc" {
+  uses = "drewwyatt/auto-rc@0.1.1"
   secrets = ["GITHUB_TOKEN"]
   env = {
     SOURCE_BRANCH = "develop"
