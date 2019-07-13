@@ -4,7 +4,7 @@ workflow "Schedule workflow" {
 }
 
 action "Draft an RC" {
-  uses = "drewwyatt/auto-rc@0.1.0"
+  uses = "drewwyatt/auto-rc@0.1.1"
   secrets = ["GITHUB_TOKEN"]
   env = {
     TARGET_BRANCH = "master"
