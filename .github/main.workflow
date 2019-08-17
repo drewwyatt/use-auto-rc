@@ -1,6 +1,6 @@
 workflow "Schedule Workflow" {
-  on = "schedule(*/5 * * * *)"
   resolves = ["draft an rc"]
+  on = "schedule(0 0 * * *)"
 }
 
 action "draft an rc" {
